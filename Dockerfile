@@ -25,8 +25,8 @@ RUN apt install -y bash \
     rm -rf /var/lib/apt/lists
 
 
-RUN mkdir lora
-RUN wget --content-disposition https://civitai.com/api/download/models/1026423  -P lora
+# RUN mkdir lora
+# RUN wget --content-disposition https://civitai.com/api/download/models/1026423  -P lora
 
 RUN python3.10 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
